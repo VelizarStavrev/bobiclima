@@ -1,0 +1,446 @@
+/*   BOBI CLIMA CODE   */
+/*  by Velizar Stavrev */
+
+body {
+    margin: 0;
+}
+
+/* NAVBAR */
+.flag-аctive {
+    border: solid 1px rgb(0, 65, 255);
+}
+
+.flag-inactive {
+    border: solid 1px rgb(0, 65, 255);
+    opacity: 50%;
+}
+
+.flag-inactive:hover {
+    opacity: 100%;
+}
+
+.active {
+    border-bottom: solid 2px white;
+}
+
+/* HOME */
+.container-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-top: solid 1px gray;
+    margin: 2.5%;
+    padding-top: 2.5%;
+    justify-items: center;
+    text-align: left;
+}
+
+.container-gallery-home {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 1.75%;
+    justify-items: left;
+}
+
+.container-gallery-home img {
+    width: 100%;
+    border: solid 2px #007bff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.text-home {
+    padding-left: 1.75%;
+}
+
+section {
+    width: 180px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section a, section li {
+    color: gray;
+}
+
+/* PRODUCTS */
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    justify-items: center;
+}
+
+.card-products {
+    width: 300px;
+    border: solid #007bff;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.card-products img{
+    width: 100%;
+    height: auto;
+    border-top: solid #007bff;
+    border-bottom: solid #007bff;
+}
+
+.card-products h5{
+    margin-bottom: 0;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.card-products p {
+    padding: 0px 2.5%;
+}
+
+/* SERVICES */
+.container-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    justify-items: center;
+}
+
+.container-gallery img {
+    width: 100%;
+    border: solid 2px #007bff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#expandedImgOne, #expandedImgTwo, #expandedImgThree{
+    border: solid 2px #007bff;
+    border-radius: 5px;
+}
+
+.textbox-services {
+    display: grid;
+    padding: 0% 5% 0% 5%;
+    text-align: justify;
+}
+
+.textbox-services hr {
+    border-bottom: solid gray 1px;
+}
+
+#Text_1, #Text_2, #Text_3, #textbox-services{
+    order: 1;
+}
+#Picture_1, #Picture_2, #Picture_3, #expandedImgTwo {
+    order: 2;
+}
+
+/* INSTRUMENTS */
+.text-instruments-first {
+    padding: 0% 5%;
+    text-align: justify;
+}
+
+.text-instruments {
+    padding: 5%;
+    text-align: justify;
+}
+
+.text-instruments .solo-first {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.text-instruments .solo-other {
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.text-instruments .list-group-item {
+    padding: 0;
+}
+
+.card-instruments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(625px, 1fr));
+    margin: 2.5%;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-instruments hr{
+    border-bottom: solid gray 1px;
+}
+
+.container-instruments img{
+   width: 100%; 
+}
+
+#text-instruments {
+    order: 1;
+}
+
+#picture-instruments {
+    order: 2;
+}
+
+/* PRICES */
+.header-prices .list-group-item {
+    color: white;
+    text-align: center;
+}
+
+.col-left {
+    text-align: right;
+    border-right: solid 1px rgb(160, 160, 160);
+}
+
+.col-right {
+    text-align: left;
+}
+
+/* PARTNERS */
+.container-partners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2.5% 0 2.5% 0;
+}
+
+.container-partners img{
+    width: 100%; 
+}
+
+/* ABOUT */
+.container-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    justify-items: center;
+}
+
+.card-about {
+    width: 400px;
+    border: solid #007bff;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.card-about img{
+    width: 100%;
+    height: 250px;
+    border-bottom: solid #007bff;
+}
+
+.card-about h5, .card-about p {
+    padding: 0px 2.5% 0px 2.5%;
+}
+
+/* CONTACTS */
+.container-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2.5%;
+    padding: 2.5% 2.5% 0 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item {
+    width: 100%;
+    background-color: #007bff;
+    border: solid #007bff;
+    border-radius: 5px;
+}
+
+.contact-item h2 {
+    text-align: center;
+    color: white;
+}
+
+#map, form {
+    width: 100%;
+    height: 500px;
+}
+
+.header-border {
+    width: 100%;
+    border-top: solid 1px white;
+    padding-top: 5px;
+}
+
+form label {
+    color: white;
+    padding-left: 0.5%;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* MULTI PURPOSE */
+header h5 {
+    border-top: solid 1px white;
+    padding-top: 15px;
+}
+
+header .list-group-item{
+    color: white;
+    padding-top: 0;
+    text-align: center;
+}
+
+.container-gallery .image-inactive {
+    width: 100%;
+    border: solid 2px gray;
+    border-radius: 2px;
+    cursor: not-allowed;
+}
+
+.link-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 0 0 2.5% 2.5%;
+    padding: 2.5% 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-instruments .link-button {
+    margin: 0;
+    padding: 1.5% 3%;
+}
+
+.link-button:hover {
+    background-color: #0555aa;
+    color: white;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+/* Home */
+@media screen and (max-width: 1315px) {
+    /* Home */
+    .header-home {
+        padding-top: 1rem;
+    }
+    /* Services */
+    .container-gallery {
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+    #Text_1, #Text_2, #Text_3, #textbox-services{
+        order: 2;
+    }
+    #Picture_1, #Picture_2, #Picture_3, #expandedImgTwo {
+        order: 1;
+    }
+    /* INSTRUMENTS */
+    #text-instruments {
+        order: 2;
+    }
+    #picture-instruments {
+        order: 1;
+    }
+    .text-instruments-first {
+        text-align: justify;
+        padding: 2.5% 5% 2.5% 5%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* About */
+    .container-about {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    .card-about {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    /* Home */
+    .container-home {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        text-align: center;
+    }   
+}
+
+@media screen and (max-width: 1000px) {
+    /* About */
+    .container-about {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+    .card-about {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    /* Contacts */
+    .container-contacts {
+        margin-bottom: 5%;
+        padding-bottom: 2.5%;
+    }
+    .footer-contacts {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    /* Instruments */
+    .card-instruments {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    /* About */
+    .container-about {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .card-about {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Contacts */
+    .container-contacts {
+        grid-gap: 1%;
+    }
+    .footer-contacts {
+        margin-top: 2.5%;
+    }
+    /* Instruments */
+    .card-instruments h4 {
+        margin-top: 0.75rem;
+    }
+    /* Multi purpose */
+    .container-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 475px) {
+    /* Multi purpose */
+    .container-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 360px) {
+    /* Multi purpose */
+    .container-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
